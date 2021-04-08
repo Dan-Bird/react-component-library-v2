@@ -19,7 +19,8 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "predeploy": "cd example && yarn install && yarn build",
-    "deploy": "gh-pages -d example/build"
+    "deploy": "gh-pages -d example/build",
+    "generate": "node ./utils/build/create-component"
   },
   "devDependencies": {
     "@babel/core": "^7.13.14",
