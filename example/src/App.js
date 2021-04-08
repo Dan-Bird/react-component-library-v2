@@ -5,6 +5,7 @@ const App = () => {
   return (
     <>
       <TestComponent theme="primary" />
+      <TestComponent theme="secondary" />
       <div>Working</div>
     </>
   );
