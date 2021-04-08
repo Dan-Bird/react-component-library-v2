@@ -2,7 +2,7 @@ module.exports = componentName => ({
   content: `import React from 'react';
 import { ${componentName}Container } from './${componentName}.styles';
 
-export interface ${componentName}Props = {
+export interface ${componentName}Props {
   foo: 'test' | 'example test';
 };
 
