@@ -1,1 +1,1 @@
-export declare const TestingCompDoisContainer: any;
+export declare const TestingCompDoisContainer: import("styled-components").StyledComponent<"div", any, {}, never>;
