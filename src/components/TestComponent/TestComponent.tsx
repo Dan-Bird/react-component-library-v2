@@ -1,8 +1,8 @@
-import React from 'react';
-import { Heading, Container } from './TestComponent.styles';
+import React from "react";
+import { Heading, Container } from "./TestComponent.styles";
 
 export type TestComponentProps = {
-  theme: 'primary' | 'secondary';
+  theme: "primary" | "secondary";
 };
 
 const TestComponent: React.FC<TestComponentProps> = ({ theme }) => (
