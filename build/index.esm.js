@@ -1,6 +1,4 @@
-import React from 'react';
-import styled, { css } from 'styled-components';
-
+import n from"react";import e,{css as t}from"styled-components";
 /*! *****************************************************************************
 Copyright (c) Microsoft Corporation.
 
@@ -14,31 +12,5 @@ INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
 LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
 OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 PERFORMANCE OF THIS SOFTWARE.
-***************************************************************************** */
-
-function __makeTemplateObject(cooked, raw) {
-    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
-    return cooked;
-}
-
-var Container = styled.div(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  background-color: white;\n  border: 1px solid black;\n  padding: 16px;\n  width: 360px;\n  text-align: center;\n  ", "\n"], ["\n  background-color: white;\n  border: 1px solid black;\n  padding: 16px;\n  width: 360px;\n  text-align: center;\n  ",
-    "\n"])), function (props) {
-    return props.theme === 'secondary' && css(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n      background-color: black;\n      color: white;\n    "], ["\n      background-color: black;\n      color: white;\n    "])));
-});
-var Heading = styled.h1(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n  font-size: 64px;\n"], ["\n  font-size: 64px;\n"])));
-var templateObject_1, templateObject_2, templateObject_3;
-
-var TestComponent = function (_a) {
-    var theme = _a.theme;
-    return (React.createElement(Container, { "data-testid": "test-component", theme: theme },
-        React.createElement(Heading, null, "I'm the test component"),
-        React.createElement("h2", null, "Made with love by Dan"))
-    // <div>
-    //   <h1>I'm the test component</h1>
-    //   <h2>Made with love by Dan</h2>
-    // </div>
-    );
-};
-
-export { TestComponent };
+***************************************************************************** */function o(n,e){return Object.defineProperty?Object.defineProperty(n,"raw",{value:e}):n.raw=e,n}var r,c,a,i=e.div(c||(c=o(["\n  background-color: white;\n  border: 1px solid black;\n  padding: 16px;\n  width: 360px;\n  text-align: center;\n  ","\n"],["\n  background-color: white;\n  border: 1px solid black;\n  padding: 16px;\n  width: 360px;\n  text-align: center;\n  ","\n"])),(function(n){return"secondary"===n.theme&&t(r||(r=o(["\n      background-color: black;\n      color: white;\n    "],["\n      background-color: black;\n      color: white;\n    "])))})),l=e.h1(a||(a=o(["\n  font-size: 64px;\n"],["\n  font-size: 64px;\n"]))),d=function(e){var t=e.theme;return n.createElement(i,{"data-testid":"test-component",theme:t},n.createElement(l,null,"I'm the test component"),n.createElement("h2",null,"Made with love by Dan"))};export{d as TestComponent};
 //# sourceMappingURL=index.esm.js.map

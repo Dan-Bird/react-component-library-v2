@@ -1,15 +1,4 @@
-'use strict';
-
-Object.defineProperty(exports, '__esModule', { value: true });
-
-var React = require('react');
-var styled = require('styled-components');
-
-function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
-
-var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
-var styled__default = /*#__PURE__*/_interopDefaultLegacy(styled);
-
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e=require("react"),n=require("styled-components");function t(e){return e&&"object"==typeof e&&"default"in e?e:{default:e}}var r=t(e),o=t(n);
 /*! *****************************************************************************
 Copyright (c) Microsoft Corporation.
 
@@ -24,30 +13,5 @@ LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
 OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 PERFORMANCE OF THIS SOFTWARE.
 ***************************************************************************** */
-
-function __makeTemplateObject(cooked, raw) {
-    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
-    return cooked;
-}
-
-var Container = styled__default['default'].div(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  background-color: white;\n  border: 1px solid black;\n  padding: 16px;\n  width: 360px;\n  text-align: center;\n  ", "\n"], ["\n  background-color: white;\n  border: 1px solid black;\n  padding: 16px;\n  width: 360px;\n  text-align: center;\n  ",
-    "\n"])), function (props) {
-    return props.theme === 'secondary' && styled.css(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n      background-color: black;\n      color: white;\n    "], ["\n      background-color: black;\n      color: white;\n    "])));
-});
-var Heading = styled__default['default'].h1(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n  font-size: 64px;\n"], ["\n  font-size: 64px;\n"])));
-var templateObject_1, templateObject_2, templateObject_3;
-
-var TestComponent = function (_a) {
-    var theme = _a.theme;
-    return (React__default['default'].createElement(Container, { "data-testid": "test-component", theme: theme },
-        React__default['default'].createElement(Heading, null, "I'm the test component"),
-        React__default['default'].createElement("h2", null, "Made with love by Dan"))
-    // <div>
-    //   <h1>I'm the test component</h1>
-    //   <h2>Made with love by Dan</h2>
-    // </div>
-    );
-};
-
-exports.TestComponent = TestComponent;
+function a(e,n){return Object.defineProperty?Object.defineProperty(e,"raw",{value:n}):e.raw=n,e}var c,l,d,i=o.default.div(l||(l=a(["\n  background-color: white;\n  border: 1px solid black;\n  padding: 16px;\n  width: 360px;\n  text-align: center;\n  ","\n"],["\n  background-color: white;\n  border: 1px solid black;\n  padding: 16px;\n  width: 360px;\n  text-align: center;\n  ","\n"])),(function(e){return"secondary"===e.theme&&n.css(c||(c=a(["\n      background-color: black;\n      color: white;\n    "],["\n      background-color: black;\n      color: white;\n    "])))})),u=o.default.h1(d||(d=a(["\n  font-size: 64px;\n"],["\n  font-size: 64px;\n"])));exports.TestComponent=function(e){var n=e.theme;return r.default.createElement(i,{"data-testid":"test-component",theme:n},r.default.createElement(u,null,"I'm the test component"),r.default.createElement("h2",null,"Made with love by Dan"))};
 //# sourceMappingURL=index.js.map
