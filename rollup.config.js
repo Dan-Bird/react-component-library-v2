@@ -13,11 +13,13 @@ export default {
       file: packageJson.main,
       format: 'cjs',
       sourcemap: true,
+      globals: { 'styled-components': 'styled' },
     },
     {
       file: packageJson.module,
       format: 'esm',
       sourcemap: true,
+      globals: { 'styled-components': 'styled' },
     },
   ],
   plugins: [

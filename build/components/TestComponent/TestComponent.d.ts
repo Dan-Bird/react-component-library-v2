@@ -1,5 +1,5 @@
 import React from 'react';
-declare type TestComponentProps = {
+export declare type TestComponentProps = {
     theme: 'primary' | 'secondary';
 };
 declare const TestComponent: React.FC<TestComponentProps>;

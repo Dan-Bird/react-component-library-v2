@@ -32,15 +32,14 @@ function __makeTemplateObject(cooked, raw) {
 
 var Container = styled__default['default'].div(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  background-color: white;\n  border: 1px solid black;\n  padding: 16px;\n  width: 360px;\n  text-align: center;\n  ", "\n"], ["\n  background-color: white;\n  border: 1px solid black;\n  padding: 16px;\n  width: 360px;\n  text-align: center;\n  ",
     "\n"])), function (props) {
-    return props.theme === 'secondary'
-        ? styled.css(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n          background-color: black;\n          color: white;\n        "], ["\n          background-color: black;\n          color: white;\n        "]))) : null;
+    return props.theme === 'secondary' && styled.css(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n      background-color: black;\n      color: white;\n    "], ["\n      background-color: black;\n      color: white;\n    "])));
 });
 var Heading = styled__default['default'].h1(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n  font-size: 64px;\n"], ["\n  font-size: 64px;\n"])));
 var templateObject_1, templateObject_2, templateObject_3;
 
 var TestComponent = function (_a) {
-    _a.theme;
-    return (React__default['default'].createElement(Container, { "data-testid": "test-component" },
+    var theme = _a.theme;
+    return (React__default['default'].createElement(Container, { "data-testid": "test-component", theme: theme },
         React__default['default'].createElement(Heading, null, "I'm the test component"),
         React__default['default'].createElement("h2", null, "Made with love by Dan")));
 };
