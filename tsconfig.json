@@ -2,8 +2,9 @@
   "compilerOptions": {
     "declaration": true,
     "declarationDir": "build/",
+    "types": ["node"],
     "module": "esnext",
-    "target": "ES5",
+    "target": "es5",
     "lib": ["ES6", "DOM", "ES2016", "ES2017"],
     "sourceMap": true,
     "jsx": "react",
