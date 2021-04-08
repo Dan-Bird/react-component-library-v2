@@ -10,12 +10,15 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
+    "@types/jest": "link:../node_modules/@types/jest",
+    "@types/node": "link:../node_modules/@types/node",
     "@types/react": "link:../node_modules/@types/react",
     "@types/react-dom": "link:../node_modules/@types/react-dom",
     "react": "link:../node_modules/react",
     "react-component-library": "link:..",
     "react-dom": "link:../node_modules/react-dom",
-    "react-scripts": "file:../node_modules/react-scripts"
+    "react-scripts": "file:../node_modules/react-scripts",
+    "typescript": "link:../node_modules/typescript"
   },
   "eslintConfig": {
     "extends": "react-app"
