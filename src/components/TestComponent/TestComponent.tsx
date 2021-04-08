@@ -10,10 +10,6 @@ const TestComponent: React.FC<TestComponentProps> = ({ theme }) => (
     <Heading>I'm the test component</Heading>
     <h2>Made with love by Dan</h2>
   </Container>
-  // <div>
-  //   <h1>I'm the test component</h1>
-  //   <h2>Made with love by Dan</h2>
-  // </div>
 );
 
 export default TestComponent;
