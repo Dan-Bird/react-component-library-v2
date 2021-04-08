@@ -6,8 +6,8 @@ export interface ${componentName}Props {
   foo: 'test' | 'example test';
 };
 
-const ${componentName}: React.FC<${componentName}Props> = () => (
-  <${componentName}Container data-testid="example" />
+const ${componentName} = ({ foo }: ${componentName}Props) => (
+  <div data-testid='example'></div>
 );
 
 export default ${componentName};

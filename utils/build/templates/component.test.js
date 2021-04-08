@@ -1,10 +1,10 @@
-module.exports = (componentName) => ({
+module.exports = componentName => ({
   content: `import React from 'react';
 import { render, screen } from '@testing-library/react';
 
 import ${componentName}, { ${componentName}Props } from './${componentName}';
 
-describe('Test Component', () => {
+describe('${componentName}', () => {
   let props: ${componentName}Props;
 
   it('should render correctly', () => {
