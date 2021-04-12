@@ -5,12 +5,15 @@ import {
   SecondaryButton,
   RedTitle,
   GlobalStyle,
+  Icon,
 } from 'react-component-library';
 
 const App = () => {
   return (
     <>
       <GlobalStyle />
+      <Icon icon='bell' width={32} height={32} />
+      <Icon icon='bookmark' width={32} height={32} className='bookmark-icon' />
       <TestComponent theme='primary' />
       <TestComponent theme='secondary' />
       <PrimaryButton onClick={() => console.log('clicked')}>

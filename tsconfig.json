@@ -14,9 +14,10 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitAny": true,
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "allowJs": true
   },
-  "include": ["src/**/*"],
+  "include": ["./types.d.ts", "src/**/*"],
   "exclude": [
     "node_modules",
     "build",
