@@ -1,17 +1,22 @@
 import React from 'react';
-import { FirstStory, SecondStory } from '../RedTitle/RedTitle.stories';
+import { Primary } from '../PrimaryButton/PrimaryButton.stories';
+import { Secondary } from '../SecondaryButton/SecondaryButton.stories';
 
 export default {
   title: 'Form/Subscription',
 };
 
-FirstStory.args = {
-  children: 'First',
+Primary.args = {
+  children: 'Primary Button',
+};
+
+Secondary.args = {
+  children: 'Secondary Button',
 };
 
 export const PrimarySubscription = () => (
   <>
-    <FirstStory />
-    <SecondStory />
+    <Primary {...Primary.args} />
+    <Secondary {...Secondary.args} />
   </>
 );
