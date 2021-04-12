@@ -1,4 +1,3 @@
-/// <reference types="react" />
 export interface BaseTitleProps {
     className?: string;
 }

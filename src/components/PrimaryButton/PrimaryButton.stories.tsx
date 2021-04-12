@@ -1,9 +1,8 @@
-// Generated with util/create-component.js
 import React from 'react';
 import PrimaryButton from './PrimaryButton';
 
 export default {
-  title: 'PrimaryButton',
+  title: 'Buttons/Primary Button',
   component: PrimaryButton,
   args: {
     children: 'Primary Button',
@@ -18,6 +17,6 @@ const Template = args => <PrimaryButton {...args} />;
 export const Primary = Template.bind({});
 
 Primary.args = {
-  argOne: true,
+  onClick: () => console.log('onClick action'),
 };
 Primary.storyName = 'Primary Button';
