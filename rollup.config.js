@@ -4,6 +4,7 @@ import commonjs from '@rollup/plugin-commonjs';
 import typescript from 'rollup-plugin-typescript2';
 import postcss from 'rollup-plugin-postcss';
 import clear from 'rollup-plugin-clear';
+import rebasePlugin from 'rollup-plugin-rebase';
 import { terser } from 'rollup-plugin-terser';
 
 const packageJson = require('./package.json');
@@ -28,6 +29,7 @@ export default {
       targets: ['build/'],
       watch: true,
     }),
+    rebasePlugin({ include: ['**/*.woff', '**/*.woff2'] }),
     resolve(),
     postcss({ modules: true }),
     commonjs(),
