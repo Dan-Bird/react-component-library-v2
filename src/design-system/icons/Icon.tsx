@@ -3,7 +3,7 @@ import ICONS from './icons';
 
 type iconType = 'bell' | 'bookmark';
 
-interface IconProps extends React.SVGProps<SVGAElement> {
+export interface IconProps extends React.SVGProps<SVGAElement> {
   size: 'small' | 'medium' | 'large';
   icon: iconType;
 }

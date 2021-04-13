@@ -41,6 +41,7 @@
     "@types/node": "^14.14.37",
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.3",
+    "@types/storybook__react": "^5.2.1",
     "@types/styled-components": "^5.1.9",
     "@types/testing-library__react": "^10.2.0",
     "@typescript-eslint/eslint-plugin": "^4.21.0",
