@@ -17,6 +17,13 @@ const GlobalStyle = createGlobalStyle`
     font-style: normal;
   }
 
+  * {
+    box-sizing: border-box;
+    font-family: inherit;
+  }
+  *::before, *::after {
+    box-sizing: inherit;
+  }
 `;
 
 export default GlobalStyle;
