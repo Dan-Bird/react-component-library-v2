@@ -5,6 +5,7 @@ import typescript from 'rollup-plugin-typescript2';
 import postcss from 'rollup-plugin-postcss';
 import clear from 'rollup-plugin-clear';
 import rebasePlugin from 'rollup-plugin-rebase';
+import svgr from '@svgr/rollup';
 import { terser } from 'rollup-plugin-terser';
 
 const packageJson = require('./package.json');
@@ -33,6 +34,7 @@ export default {
     resolve(),
     postcss({ modules: true }),
     commonjs(),
+    // svgr({ ref: true, outDir: 'icons', typescript: true }),
     typescript({ useTsconfigDeclarationDir: true }),
     terser(),
   ],

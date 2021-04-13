@@ -14,15 +14,10 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitAny": true,
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "allowJs": true
   },
-  "include": ["src/**/*"],
-  "exclude": [
-    "node_modules",
-    "build",
-    "src/**/*.stories.tsx",
-    "src/**/*.test.tsx",
-    "example"
-  ],
+  "include": ["./types.d.ts", "src/**/*"],
+  "exclude": ["node_modules", "build", "src/**/*.test.tsx", "example"],
   "files": ["./types.d.ts"]
 }

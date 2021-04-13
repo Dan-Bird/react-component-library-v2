@@ -4,3 +4,4 @@ export { default as SecondaryButton } from './components/SecondaryButton/Seconda
 export { default as RedTitle } from './components/RedTitle/RedTitle';
 export * from './design-system';
 export { default as GlobalStyle } from './design-system/globalStyles';
+export { default as Icon } from './design-system/icons/Icon';
