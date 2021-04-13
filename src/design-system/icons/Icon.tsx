@@ -4,16 +4,21 @@ import ICONS from './icons';
 type iconType = 'bell' | 'bookmark';
 
 interface IconProps extends React.SVGProps<SVGAElement> {
-  width?: number;
-  height?: number;
+  size: 'small' | 'medium' | 'large';
   icon: iconType;
 }
 
-const Icon = ({ width, height, icon, className }: IconProps) => (
+const sizeMap = {
+  small: 8,
+  medium: 16,
+  large: 24,
+};
+
+const Icon = ({ size, icon, className }: IconProps) => (
   <svg
     className={className}
-    width={width}
-    height={height}
+    width={sizeMap[size]}
+    height={sizeMap[size]}
     viewBox={ICONS[icon].viewbox}
   >
     <path d={ICONS[icon].path}></path>

@@ -1,9 +1,8 @@
 import React from 'react';
 declare type iconType = 'bell' | 'bookmark';
 interface IconProps extends React.SVGProps<SVGAElement> {
-    width?: number;
-    height?: number;
+    size: 'small' | 'medium' | 'large';
     icon: iconType;
 }
-declare const Icon: ({ width, height, icon, className }: IconProps) => JSX.Element;
+declare const Icon: ({ size, icon, className }: IconProps) => JSX.Element;
 export default Icon;

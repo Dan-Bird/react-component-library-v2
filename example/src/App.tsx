@@ -12,8 +12,8 @@ const App = () => {
   return (
     <>
       <GlobalStyle />
-      <Icon icon='bell' width={32} height={32} />
-      <Icon icon='bookmark' width={32} height={32} className='bookmark-icon' />
+      <Icon icon='bell' size='medium' />
+      <Icon icon='bookmark' size='large' className='bookmark-icon' />
       <TestComponent theme='primary' />
       <TestComponent theme='secondary' />
       <PrimaryButton onClick={() => console.log('clicked')}>
