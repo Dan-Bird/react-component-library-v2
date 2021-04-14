@@ -29,20 +29,20 @@ const pluginsArray = [
 
 export default {
   input: {
-    component: 'src/components/index.ts',
+    components: 'src/components/index.ts',
     designSystem: 'src/components/index.ts',
     index: 'src/index.ts',
   },
   output: [
     {
-      dir: 'build/',
+      dir: 'build/cjs',
       entryFileNames: '[name].js',
       format: 'cjs',
       sourcemap: true,
     },
     {
-      dir: 'build/',
-      entryFileNames: '[name].module.js',
+      dir: 'build/esm',
+      entryFileNames: '[name].js',
       format: 'esm',
       sourcemap: true,
     },

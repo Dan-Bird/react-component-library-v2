@@ -1,17 +1,18 @@
 import React from 'react';
 import {
-  TestComponent,
   PrimaryButton,
   SecondaryButton,
   RedTitle,
-  GlobalStyle,
   Icon,
 } from 'react-component-library';
+
+import { TestComponent } from 'react-component-library/components';
+// import { GlobalStyle } from 'react-component-library/designSystem';
 
 const App = () => {
   return (
     <>
-      <GlobalStyle />
+      {/* <GlobalStyle /> */}
       <Icon icon='bell' size='medium' />
       <Icon icon='bookmark' size='large' className='bookmark-icon' />
       <TestComponent theme='primary' />
