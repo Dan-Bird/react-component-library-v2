@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
-import { colours, typography } from './index';
+import colours from './colours';
+import typography from './typography';
 import abrilfatface_woff from '../assets/fonts/abrilfatface-regular.woff';
 import abrilfatface_woff2 from '../assets/fonts/abrilfatface-regular.woff2';
 

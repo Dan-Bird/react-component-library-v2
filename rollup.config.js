@@ -5,37 +5,47 @@ import typescript from 'rollup-plugin-typescript2';
 import postcss from 'rollup-plugin-postcss';
 import clear from 'rollup-plugin-clear';
 import rebasePlugin from 'rollup-plugin-rebase';
-import svgr from '@svgr/rollup';
+// import svgr from '@svgr/rollup';
 import { terser } from 'rollup-plugin-terser';
 
 const packageJson = require('./package.json');
 
+const clearPlugin = [
+  clear({
+    targets: ['build/'],
+    watch: true,
+  }),
+];
+
+const pluginsArray = [
+  peerDepsExternal(),
+  rebasePlugin({ include: ['**/*.woff', '**/*.woff2'] }),
+  resolve(),
+  postcss({ modules: true }),
+  commonjs(),
+  typescript({ useTsconfigDeclarationDir: true }),
+  terser(),
+];
+
 export default {
-  input: 'src/index.ts',
+  input: {
+    component: 'src/components/index.ts',
+    designSystem: 'src/components/index.ts',
+    index: 'src/index.ts',
+  },
   output: [
     {
-      file: packageJson.main,
+      dir: 'build/',
+      entryFileNames: '[name].js',
       format: 'cjs',
       sourcemap: true,
     },
     {
-      file: packageJson.module,
+      dir: 'build/',
+      entryFileNames: '[name].module.js',
       format: 'esm',
       sourcemap: true,
     },
   ],
-  plugins: [
-    peerDepsExternal(),
-    clear({
-      targets: ['build/'],
-      watch: true,
-    }),
-    rebasePlugin({ include: ['**/*.woff', '**/*.woff2'] }),
-    resolve(),
-    postcss({ modules: true }),
-    commonjs(),
-    // svgr({ ref: true, outDir: 'icons', typescript: true }),
-    typescript({ useTsconfigDeclarationDir: true }),
-    terser(),
-  ],
+  plugins: pluginsArray,
 };
