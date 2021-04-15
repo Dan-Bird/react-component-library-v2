@@ -1,6 +1,5 @@
-import React from "react";
-export declare type TestComponentProps = {
-    theme: "primary" | "secondary";
-};
-declare const TestComponent: React.FC<TestComponentProps>;
+export interface TestComponentProps {
+    mode: 'primary' | 'secondary';
+}
+declare const TestComponent: ({ mode }: TestComponentProps) => JSX.Element;
 export default TestComponent;
