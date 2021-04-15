@@ -7,6 +7,7 @@ import {
   GlobalStyle,
   Icon,
   ThemeProvider,
+  ThemedComponent,
 } from 'react-component-library';
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
       <Icon icon='bookmark' size='large' className='bookmark-icon' />
       <TestComponent mode='primary' />
       <TestComponent mode='secondary' />
+      <ThemedComponent />
       <PrimaryButton onClick={() => console.log('clicked')}>
         Primary Button
       </PrimaryButton>

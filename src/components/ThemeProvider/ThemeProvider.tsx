@@ -1,7 +1,7 @@
 import React from 'react';
 import { ThemeProvider as StyledThemeProvider } from 'styled-components';
 
-interface Theme {
+export interface Theme {
   mode: 'light' | 'dark';
 }
 

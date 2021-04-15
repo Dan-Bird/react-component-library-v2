@@ -1,5 +1,5 @@
 import React from 'react';
-interface Theme {
+export interface Theme {
     mode: 'light' | 'dark';
 }
 export interface ThemeProviderProps {
