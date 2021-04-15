@@ -2,7 +2,10 @@ import React from 'react';
 import { Theme } from '../ThemeProvider/ThemeProvider';
 import { Container } from './ThemedComponent.styles';
 
-interface ThemedComponentProps {
+export interface ThemedComponentProps {
+  /**
+   * Colour mode for the app. Represented in as an object with a 'mode' property set to a string of either 'light' or 'dark'.
+   */
   theme?: Theme;
 }
 

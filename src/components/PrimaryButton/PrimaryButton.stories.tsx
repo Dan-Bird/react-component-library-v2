@@ -1,5 +1,6 @@
 import React from 'react';
 import PrimaryButton from './PrimaryButton';
+import { BaseButtonProps } from '../BaseButton/BaseButton';
 
 export default {
   title: 'Buttons/Primary Button',
@@ -12,7 +13,7 @@ export default {
   },
 };
 
-const Template = args => <PrimaryButton {...args} />;
+const Template = (args: BaseButtonProps) => <PrimaryButton {...args} />;
 
 export const Primary = Template.bind({});
 
