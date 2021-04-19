@@ -1,11 +1,13 @@
 import React from 'react';
-export interface Theme {
-    mode: 'light' | 'dark';
-}
-export interface ThemeProviderProps {
+export declare type ThemeMode = 'light' | 'dark';
+export declare type ThemeProviderProps = {
     children: React.ReactNode;
-    className?: string;
-    theme: Theme;
-}
-declare const ThemeProvider: ({ children, theme }: ThemeProviderProps) => JSX.Element;
+    /**
+     * An object to describe the theme of the application.
+     */
+    theme: {
+        mode?: ThemeMode;
+    };
+};
+declare const ThemeProvider: ({ children, theme, }: ThemeProviderProps) => JSX.Element;
 export default ThemeProvider;

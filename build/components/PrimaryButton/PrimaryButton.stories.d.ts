@@ -1,6 +1,7 @@
+import { BaseButtonProps } from '../BaseButton/BaseButton';
 declare const _default: {
     title: string;
-    component: import("styled-components").StyledComponent<({ className, children, ...otherProps }: import("../BaseButton/BaseButton").BaseButtonProps) => JSX.Element, any, import("../BaseButton/BaseButton").BaseButtonProps, never>;
+    component: import("styled-components").StyledComponent<({ className, children, ...otherProps }: BaseButtonProps) => JSX.Element, any, BaseButtonProps, never>;
     args: {
         children: string;
     };
