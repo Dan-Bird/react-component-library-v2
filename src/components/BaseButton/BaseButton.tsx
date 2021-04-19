@@ -2,10 +2,7 @@ import React from 'react';
 import { Button } from './BaseButton.styles';
 
 export interface BaseButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  className?: string;
-  children: string | React.ReactNode;
-}
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {}
 
 const BaseButton = ({
   className,

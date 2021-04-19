@@ -8,7 +8,7 @@ describe('Test Component', () => {
 
   beforeEach(() => {
     props = {
-      theme: 'primary',
+      mode: 'primary',
     };
   });
 
@@ -23,7 +23,7 @@ describe('Test Component', () => {
   });
 
   it('should have secondary style when theme is set to secondary', () => {
-    props.theme = 'secondary';
+    props.mode = 'secondary';
     renderComponent();
 
     const testComponent = screen.getByTestId('test-component');

@@ -6,6 +6,6 @@ export default {
   component: TestComponent,
 };
 
-export const Primary = () => <TestComponent theme="primary" />;
+export const Primary = () => <TestComponent mode='primary' />;
 
-export const Secondary = () => <TestComponent theme="secondary" />;
+export const Secondary = () => <TestComponent mode='secondary' />;

@@ -1,7 +1,6 @@
-import React from 'react';
 declare const _default: {
     title: string;
-    component: React.FC<import("./TestComponent").TestComponentProps>;
+    component: ({ mode }: import("./TestComponent").TestComponentProps) => JSX.Element;
 };
 export default _default;
 export declare const Primary: () => JSX.Element;
