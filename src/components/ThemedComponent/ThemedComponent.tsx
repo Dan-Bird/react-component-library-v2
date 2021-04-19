@@ -1,21 +1,19 @@
 import React from 'react';
-import { Theme } from '../ThemeProvider/ThemeProvider';
+import { ThemeMode } from '../ThemeProvider/ThemeProvider';
+import { withTheme } from 'styled-components';
 import { Container } from './ThemedComponent.styles';
 
-export interface ThemedComponentProps {
-  /**
-   * Colour mode for the app. Represented in as an object with a 'mode' property set to a string of either 'light' or 'dark'.
-   */
-  theme?: Theme;
+interface ThemedComponentProps {
+  theme: {
+    mode: ThemeMode;
+  };
 }
 
-const ThemedComponent = ({
-  theme = { mode: 'light' },
-}: ThemedComponentProps) => (
+const ThemedComponent = ({ theme: { mode } }: ThemedComponentProps) => (
   <Container>
     <h1>I'm a themed component</h1>
-    <p>Current theme is: {theme.mode}</p>
+    <p>Current theme is: {mode}</p>
   </Container>
 );
 
-export default ThemedComponent;
+export default withTheme(ThemedComponent);

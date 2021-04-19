@@ -1,17 +1,22 @@
 import React from 'react';
 import { ThemeProvider as StyledThemeProvider } from 'styled-components';
 
-export interface Theme {
-  mode: 'light' | 'dark';
-}
+export type ThemeMode = 'light' | 'dark';
 
-export interface ThemeProviderProps {
+export type ThemeProviderProps = {
   children: React.ReactNode;
-  className?: string;
-  theme: Theme;
-}
+  /**
+   * An object to describe the theme of the application.
+   */
+  theme: {
+    mode?: ThemeMode;
+  };
+};
 
-const ThemeProvider = ({ children, theme }: ThemeProviderProps) => (
+const ThemeProvider = ({
+  children,
+  theme = { mode: 'light' },
+}: ThemeProviderProps) => (
   <StyledThemeProvider theme={theme}>{children}</StyledThemeProvider>
 );
 
